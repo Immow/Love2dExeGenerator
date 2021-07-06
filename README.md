@@ -14,6 +14,6 @@ Right click the file and chose run with Powershell
 # What you need to configure/change
 1) Make sure this folder exists: "C:\Dev\love-windows" or chose a different location but then you'l have to update $path1 = "C:\Dev\love-windows" to that
 2) Check if your $path2 = "C:\Program Files\LOVE" is pointing to where Löve is installed.
-3) $path3 = "D:\Documents\Programming\Lua\Games\Numbergame\*" <-- change this to where your main.lua is located
+3) $path3 = "D:\Documents\Programming\Lua\Games\Numbergame\*" <-- change this to where your game (main.lua) is located.
 
 I'm not a Powerhsell expert so feel free to add to this.
