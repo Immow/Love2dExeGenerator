@@ -11,7 +11,7 @@ Right click the file and chose run with Powershell
 - It will merge your zip file with some magic to create an executable.
 - It will remove the zip.
 
-#What you need to configure/change
+# What you need to configure/change
 1) Make sure this folder exists: "C:\Dev\love-windows" or chose a different location but then you'l have to update $path1 = "C:\Dev\love-windows" to that
 2) Check if your $path2 = "C:\Program Files\LOVE" is pointing to where Löve is installed.
 3) $path3 = "D:\Documents\Programming\Lua\Games\Numbergame\*" <-- change this to where your main.lua is located
