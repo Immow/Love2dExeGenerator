@@ -1,15 +1,13 @@
 $path1 = "C:\Dev\love-windows"
 $path2 = "C:\Program Files\LOVE"
 $path3 = "D:\Documents\Programming\Lua\Games\Numbergame\*"
-$file1 = "C:\Dev\love-windows\game.zip"
-$file2 = "C:\Dev\love-windows\game.exe"
-if (Test-Path $file2) {
-    Remove-Item $file2 
+if (Test-Path "$path1\game.exe") {
+    Remove-Item "$path1\game.exe" 
 }
 try {
     Compress-Archive -Path $path3 -DestinationPath "$path1\game.zip"
-    Get-Content -raw "$path2\love.exe","$path1\game.zip" -Encoding Byte | Set-Content -Encoding Byte -NoNewline $file2
-    Remove-Item $file1
+    Get-Content -raw "$path2\love.exe","$path1\game.zip" -Encoding Byte | Set-Content -Encoding Byte -NoNewline "$path1\game.exe"
+    Remove-Item "$path1\game.zip"
 }
 catch {
     throw $_.Exception.Message
