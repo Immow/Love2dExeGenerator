@@ -8,6 +8,7 @@ try {
     Compress-Archive -Path $path3 -DestinationPath "$path1\game.zip"
     Get-Content -raw "$path2\love.exe","$path1\game.zip" -Encoding Byte | Set-Content -Encoding Byte -NoNewline "$path1\game.exe"
     Remove-Item "$path1\game.zip"
+    Copy-Item -Path $path2\* -Include "*.dll" -Destination $path1
 }
 catch {
     throw $_.Exception.Message
