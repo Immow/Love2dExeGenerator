@@ -6,7 +6,7 @@ This Powershell program will generate a game.exe of your love game.
 Right click the file and chose run with Powershell
 
 # What it does when run
-- It will check if there is a executable named game.exe in your output path.
+- It will check if there is a executable named game.exe in your output path ($path3) and removes it if that's the case.
 - It will compress your game in a zipfile.
 - It will merge your zip file with some magic to create an executable.
 - It will remove the zip.
