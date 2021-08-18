@@ -10,6 +10,7 @@ Right click the file and chose run with Powershell
 - It will compress your game in a zipfile.
 - It will merge your zip file with some magic to create an executable.
 - It will remove the zip.
+- It will copy over the DLL files.
 
 # What you need to configure/change
 1) Make sure this folder exists: "C:\Dev\love-windows" or chose a different location but then you'l have to update $path1 = "C:\Dev\love-windows" to that
